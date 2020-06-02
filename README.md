@@ -9,6 +9,11 @@ The length of the output token is determined by the number of arrays in the mult
 
 Incoming array example `arr_symbols = [['a', 1, 'C', 0 ],['H', 2, 's', 'D'],['V', 3, 4, 'p']]`
 
+When using in a real app make sure to prepare "seed arrays" by running something like this:
+
+`arr_symbols = []`
+
+`7.times { arr_symbols << ((0..9).to_a | ('a'..'z').to_a | ('A'..'Z').to_a).shuffle }`
 
 ### Install
 
@@ -20,6 +25,8 @@ or add `pseud_random_value` to your apps `Gemfile`
 ```
 gem 'pseudo_random_value'
 ```
+
+And then execute:
 
 ```
 bundle install
@@ -35,7 +42,7 @@ Open your favorite Terminal and run these commands.
 
 `prv.new_value(token_counter)` replace `token_counter` with `1`
 
-when you do, you will get something like this `aHV`
+when you do, you will get something like this `aH3`
 
 License
 ----
