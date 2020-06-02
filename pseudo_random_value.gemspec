@@ -2,7 +2,7 @@ $:.push File.expand_path("../lib", __FILE__)
 
 Gem::Specification.new do |s|
   s.name        = "pseudo_random_value"
-  s.version     = "1.0.0"
+  s.version     = "1.0.2"
   s.date        = "2020-05-29"
   s.summary     = "Pseudo-random value construction"
   s.description = "Simple gem to create pseudo-random values"
